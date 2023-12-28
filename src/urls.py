@@ -5,10 +5,10 @@ from django.urls import path, include
 
 # Define the right template for host home
 def home(request):
-    return render(request, 'base/home.html')
+    return render(request, 'pages/base.html')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('goals', include('goals.urls'))
+    path('', include('goals.urls'))
 ]

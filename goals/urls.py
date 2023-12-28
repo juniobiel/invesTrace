@@ -1,6 +1,7 @@
-from goals.views import home
+from . import views
 from django.urls import path
 
 urlpatterns = [
-    path('', home)
+    path('goals/', views.home),
+    path('goal/<int:id>', views.goals),
 ]

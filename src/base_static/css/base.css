@@ -1,0 +1,19 @@
+.main-content {
+    padding-top: 0;
+}
+
+.main-content-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: var(--spacing-gutter-large);
+}
+
+.main-content-detail {
+    max-width: 84rem;
+    margin: 0 auto;
+}
+
+.main-content-detail {
+    transform: scale(1);
+    box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.2);
+}
